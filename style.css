@@ -39,6 +39,11 @@ section {
 body {
   line-height: 1;
   font-family: 'Merriweather Sans', sans-serif;
+  background-color: #222222;
+}
+
+main {
+  background-color: #f9fafb;
 }
 
 ol,
@@ -68,11 +73,29 @@ em {
   font-style: italic;
 }
 
+a:link,
+a:visited {
+  color: #fff;
+}
+
+a:focus {
+  color: #baff80;
+}
+
+a:hover {
+  color: #baff80;
+}
+
+a:active {
+  color: #baff80;
+}
+
 .container {
   display: grid;
   grid-template-columns: 535px 905px;
   max-width: 1440px;
   min-height: 100vh;
+  margin-inline: auto;
 }
 
 .header {
@@ -117,20 +140,71 @@ em {
 }
 
 .hero {
-  background-color: #f9fafb;
-  padding: 10.625rem 3.125rem 2.5rem 3.125rem;
+  padding: 10.625rem 3.125rem 4.0625rem 3.125rem;
 }
 
 .hero p {
   max-width: 700px;
-  margin-left: 3.125rem;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.4;
-  /* padding: 10.625rem 11.5625 3.75rem; */
 }
 
 .hero p:first-of-type {
-  margin-top: 10.625rem;
+  margin-bottom: 2.5rem;
+}
+
+.form-section {
+  padding-block: 2em;
+  padding-left: 3.125rem;
+  box-shadow: black;
+  background-color: #fff;
+}
+
+.form-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.875rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 1.5rem;
+}
+
+.form-group {
+  flex: 0 1 275px;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+
+input {
+  width: 260px;
+  padding: 0.25rem;
+  border: none;
+  border: 2px solid #eee;
+  border-radius: 3px;
+}
+
+.form-footer {
+  padding: 2rem;
+  padding-left: 3.125rem;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border: 1px solid #596d48;
+  border-radius: 6px;
+  background-color: #596d48;
+  display: inline-block;
+  padding: 0.9rem 3.5rem;
   margin-bottom: 2.5rem;
 }

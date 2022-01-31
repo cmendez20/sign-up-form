@@ -21,7 +21,13 @@
           <img src="./odin-logo.png" alt="ODIN Project Logo" class="logo" />
           <h1>ODIN</h1>
         </div>
-        <cite class="cite">Photo by Haliie West on Unsplash</cite>
+        <cite class="cite"
+          >Photo by
+          <a href="https://unsplash.com/@haliewestphoto" target="_blank"
+            >Haliie West</a
+          >
+          on <a href="https://unsplash.com/" target="_blank">Unsplash</a></cite
+        >
       </header>
       <main>
         <section class="hero">
@@ -32,7 +38,39 @@
           </p>
           <p>You <em>know</em> you want to.</p>
         </section>
-        <form action="" class="form"></form>
+        <section class="form-section">
+          <h2>Let's do this!</h2>
+          <form action="" class="form">
+            <div class="form-group">
+              <label for="firstName">FIRST NAME</label>
+              <input id="firstName" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">LAST NAME</label>
+              <input type="text" id="lastName" />
+            </div>
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">PHONE NUMBER</label>
+              <input type="tel" id="phoneNumber" />
+            </div>
+            <div class="form-group">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" />
+            </div>
+            <div class="form-group">
+              <label for="confirm">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm" />
+            </div>
+          </form>
+        </section>
+        <section class="form-footer">
+          <button class="btn">Create Account</button>
+          <p>Already have an account? <span class="log-in">Log in</span></p>
+        </section>
       </main>
     </div>
   </body>
