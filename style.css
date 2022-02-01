@@ -71,6 +71,7 @@ table {
 
 em {
   font-style: italic;
+  letter-spacing: 0.5px;
 }
 
 a:link,
@@ -92,7 +93,8 @@ a:active {
 
 .container {
   display: grid;
-  grid-template-columns: 535px 905px;
+  /* grid-template-columns: 535px 905px; */
+  grid-template-columns: minmax(300px, 535px) minmax(300px, 905px);
   max-width: 1440px;
   min-height: 100vh;
   margin-inline: auto;
@@ -148,6 +150,7 @@ a:active {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.4;
+  word-spacing: 2px;
 }
 
 .hero p:first-of-type {
@@ -155,7 +158,7 @@ a:active {
 }
 
 .form-section {
-  padding-block: 2em;
+  padding-top: 1.25rem;
   padding-left: 3.125rem;
   box-shadow: black;
   background-color: #fff;
@@ -169,8 +172,10 @@ a:active {
 .form {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 4rem;
+  column-gap: 4.5rem;
   row-gap: 1.5rem;
+  position: relative;
+  padding-bottom: 2.5rem;
 }
 
 .form-group {
@@ -206,5 +211,37 @@ input {
   background-color: #596d48;
   display: inline-block;
   padding: 0.9rem 3.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.375rem;
+  position: absolute;
+  bottom: -7.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: hsl(92, 20%, 45%);
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-footer {
+  margin-top: 5rem;
+}
+
+.log-in:link,
+.log-in:visited {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.log-in:link:hover {
+  text-decoration: underline;
+}
+
+.bottom-shawdow {
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
 }
