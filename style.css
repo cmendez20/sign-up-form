@@ -94,8 +94,6 @@ a:active {
 .container {
   display: flex;
   flex-wrap: wrap;
-  /* grid-template-columns: 535px 905px; */
-  /* grid-template-columns: minmax(300px, 535px) minmax(300px, 905px); */
   max-width: 1440px;
   min-height: 100vh;
   margin-inline: auto;
@@ -114,6 +112,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   flex: 1 1 305px;
+  flex: 1 1 535px;
 }
 
 .header_box {
